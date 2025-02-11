@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'jcommonModule'
-  s.version      = '1.0.1'
+  s.version      = '1.1.1'
   s.summary      = 'This is commonModule'
   s.description  = <<-DESC
                     A longer description of DemoPod.
@@ -14,5 +14,12 @@ Pod::Spec.new do |s|
   
   s.source_files     = 'commonModule/commonModule/**/*.{swift,h,m,storyboard}' # Adjusted to match the structure
   s.exclude_files    = 'commonModule/Exclude/**'
- 
+  
+  s.resource_bundles = {
+    'jcommonModuleResources' => [
+      'commonModule/commonModule/**/*.storyboard',
+      'commonModule/commonModule/**/*.xib',
+      'commonModule/commonModule/**/*.xcassets'
+    ]
+  }
 end

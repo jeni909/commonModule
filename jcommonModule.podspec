@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'jcommonModule'
-  s.version      = '1.1.2'
+  s.version      = '1.1.3'
   s.summary      = 'This is commonModule'
   s.description  = <<-DESC
                     A longer description of DemoPod.
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
     'jcommonModuleResources' => [
       'commonModule/**/*.storyboard',
       'commonModule/**/*.xib',
-      'commonModule/**/*.xcassets'
+      'commonModule/**/*.xcassets',
+      'commonModule/**/*.xcodeproj'
     ]
   }
 end
